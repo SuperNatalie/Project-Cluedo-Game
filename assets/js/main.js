@@ -5,7 +5,7 @@ const suspectsArray = [
         occupation: "Entrepreneur",
         age: 45,
         description: "He has a lot of connections",
-        image: "/assets/img/Tudor_Mansion_Mr._Green.png",
+        image: "./assets/img/Tudor_Mansion_Mr._Green.png",
         color: "green"
     }, 
     {
@@ -14,7 +14,7 @@ const suspectsArray = [
         occupation: "Scientist",
         age: 26,
         description: "PhD in plant toxicology.",
-        image: "/assets/img/Tudor_Mansion_Doctor_Orchid.png",
+        image: "./assets/img/Tudor_Mansion_Doctor_Orchid.png",
         color: "white"
     },
     {
@@ -23,7 +23,7 @@ const suspectsArray = [
         occupation: "Designer",
         age: 22,
         description: "Billionaire video game designer",
-        image: "/assets/img/Tudor_Mansion_Professor_Plum.png",
+        image: "./assets/img/Tudor_Mansion_Professor_Plum.png",
         color: "purple"
     },
     {
@@ -32,7 +32,7 @@ const suspectsArray = [
         occupation: "Actress",
         age: 31,
         description: "She is an A-list movie star with a dark past",
-        image: "/assets/img/Tudor_Mansion_Miss_Scarlett.png",
+        image: "./assets/img/Tudor_Mansion_Miss_Scarlett.png",
         color: "red"
     },
     {
@@ -41,7 +41,7 @@ const suspectsArray = [
         occupation: "Socialité",
         age: 36,
         description: "She is from a wealthy family and uses her status and money to earn popularity",
-        image: "/assets/img/Tudor_Mansion_Mrs._Peacock.png",
+        image: "./assets/img/Tudor_Mansion_Mrs._Peacock.png",
         color: "blue"
     },
     {
@@ -50,7 +50,7 @@ const suspectsArray = [
         occupation: "Retired Football player",
         age: 62,
         description: "He is a former football player who tries to get by on his former glory",
-        image: "/assets/img/Tudor_Mansion_Colonel_Mustard.png",
+        image: "./assets/img/Tudor_Mansion_Colonel_Mustard.png",
         color: "yellow"
     }
 ];
