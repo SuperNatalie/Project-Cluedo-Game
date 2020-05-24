@@ -10,10 +10,10 @@ body {
     background-size: cover;
 }
 
-#start, #new{
+#start, #new, #mystery{
     width: 100px;
-    height: 50px;
-    font-size: 1em;
+    height: 60px;
+    font-size: 0.9em;
     background-color: rgb(59, 113, 158);
     color: white;
     outline: none;

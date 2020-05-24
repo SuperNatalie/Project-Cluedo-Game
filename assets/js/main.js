@@ -101,31 +101,32 @@ function randomNumber(n) {
     return Math.floor(Math.random()*n);
 }
 
-function selectRandom1() {
-    return randomSuspect = suspectsArray[randomNumber(6)];
-}
-function selectRandom2() {
-    return randomWeapon = weaponsArray[randomNumber(8)];
-}
-function selectRandom3() {
-    return randomRoom = roomsArray[randomNumber(15)];
+var randomSuspect;
+var randomWeapon;
+var randomRoom;
+var mystery;
+
+function selectRandom() {
+    randomSuspect = suspectsArray[randomNumber(6)];
+    randomWeapon = weaponsArray[randomNumber(8)];
+    randomRoom = roomsArray[randomNumber(15)];
 }
 
-selectRandom1();
-selectRandom2();
-selectRandom3();
 
 function pickMystery() {
-return mystery = [randomSuspect, randomWeapon, randomRoom] ;
+selectRandom();
+answer.innerHTML = "The secret envelope has been filled! Whats's your guess..?";
+mystery = [randomSuspect, randomWeapon, randomRoom];
+killerPic.innerHTML =  "<img src='./assets/img/secret_envelope.png'>";
+console.log(mystery);
 }
 
-pickMystery();
 
 function revealMystery() {
     let answer = document.getElementById("answer");
     let killerPic = document.getElementById("killerpic");
 
-    answer.innerHTML = (randomSuspect.firstName + " " + randomSuspect.lastName + " killed Mr. Boddy using the " + randomWeapon.name + " in the " + randomRoom + ".");
+    answer.innerHTML = (mystery[0].firstName + " " + mystery[0].lastName + " killed Mr. Boddy using the " + mystery[1].name + " in the " + mystery[2] + ".");
 
     killerPic.innerHTML =  `<img src="${randomSuspect.image}">`
 }
