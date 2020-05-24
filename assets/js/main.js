@@ -105,13 +105,14 @@ var randomSuspect;
 var randomWeapon;
 var randomRoom;
 var mystery;
+let killerPic = document.getElementById("killerpic");
+let answer = document.getElementById("answer");
 
 function selectRandom() {
     randomSuspect = suspectsArray[randomNumber(6)];
     randomWeapon = weaponsArray[randomNumber(8)];
     randomRoom = roomsArray[randomNumber(15)];
 }
-
 
 function pickMystery() {
 selectRandom();
@@ -123,11 +124,7 @@ console.log(mystery);
 
 
 function revealMystery() {
-    let answer = document.getElementById("answer");
-    let killerPic = document.getElementById("killerpic");
-
     answer.innerHTML = (mystery[0].firstName + " " + mystery[0].lastName + " killed Mr. Boddy using the " + mystery[1].name + " in the " + mystery[2] + ".");
-
     killerPic.innerHTML =  `<img src="${randomSuspect.image}">`
 }
 

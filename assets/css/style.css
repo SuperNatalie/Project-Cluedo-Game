@@ -40,5 +40,6 @@ h3 {
 #killerpic {
     position: absolute;
     left: 0;
-    bottom:0;
+    bottom: 30px;
+    left: 30px;
 }
