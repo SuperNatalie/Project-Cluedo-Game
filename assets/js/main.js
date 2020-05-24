@@ -116,10 +116,9 @@ function selectRandom() {
 
 function pickMystery() {
 selectRandom();
-var killerPic = document.getElementById("killerpic");
 answer.innerHTML = "The secret envelope has been filled! Whats's your guess..?";
 mystery = [randomSuspect, randomWeapon, randomRoom];
-killerPic.innerHTML =  "<img src='./assets/img/secret_envelope.png'>";
+
 console.log(mystery);
 }
 
